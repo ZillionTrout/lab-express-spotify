@@ -1,4 +1,3 @@
-
 <body>
     <header>
     <nav id="nav-bar">
@@ -16,6 +15,9 @@
             </div>
             <div>
                 <h3>{{name}}</h3>
+                <div>
+                    <a href="/albums/{{../artistId}}/tracks/{{id}}?artist={{../artist}}" method="GET" name="tracks">Check tracks</a>
+                </div>
         </div>
     </div>
     {{/each}}	
