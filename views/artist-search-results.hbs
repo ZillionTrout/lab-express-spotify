@@ -1,24 +1,25 @@
-<body>
-    <header>
-        <nav id="nav-bar">
-        <a href="/"> 🎧 Return</a>
-        </nav>
+<header>
+    <nav id="nav-bar">
+        <a href="/" class="myButton"> 🎧 Return</a>
+    </nav>
+    <img class="banner2" src="images/—Pngtree—png music player background_8468984.png" height="250px" />
     </header>
+<body>
     <div>
         <h1>Results for: {{artist}}</h1>
         {{#each items}}
         <div>
-            <div>
+            <div class="artists">
                 {{#with images.[1]}}  
-                <img height="300" src="{{url}}" alt={{name}}>
+                <img height="350" src="{{url}}" alt={{name}}>
                 {{/with}}
             </div>
             <div>
-                <h3>{{name}}</h3>
+                <h2>{{name}}</h2>
                 <h4>Followers {{follorers.total}}</h4>
                 <h4>Trending Score {{popularity}} </h4>
-                <div>
-                    <a href="/albums/{{id}}?artist={{../artist}}" method="GET" name="artistId">See albums</a>
+                <div class="buttontrack">
+                    <a href="/albums/{{id}}?artist={{../artist}}" method="GET" name="artistId" class="myButton">See albums</a>
                 </div>
             </div>  
         </div>

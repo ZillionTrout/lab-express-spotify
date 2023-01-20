@@ -1,22 +1,23 @@
 <body>
     <header>
     <nav id="nav-bar">
-        <a href="/artist-search?artist={{artist}}"> 🎧 Return</a>
+        <a href="/artist-search?artist={{artist}}" class="myButton"> 🎧 Return</a>
     </nav>
+    <img class="banner2" src="/images/—Pngtree—png music player background_8468984.png" height="250px" />
     </header>
-    <div>
+    <div class="albums">
         <h1>{{items.0.artists.0.name}} Albums</h1>
         {{#each items}} 
         <div>
-            <div>
+            <div class="artists">
                 {{#with images.[1]}}  
                 <img src="{{url}}" alt={{name}}>
                 {{/with}}
             </div>
             <div>
                 <h3>{{name}}</h3>
-                <div>
-                    <a href="/albums/{{../artistId}}/tracks/{{id}}?artist={{../artist}}" method="GET" name="tracks">Check tracks</a>
+                <div class="buttontrack">
+                    <a href="/albums/{{../artistId}}/tracks/{{id}}?artist={{../artist}}" method="GET" name="tracks" class="myButton">Check tracks</a>
                 </div>
         </div>
     </div>

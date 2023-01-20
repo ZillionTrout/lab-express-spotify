@@ -1,3 +1,95 @@
-body {
-    background-color: rgb(61, 61, 61);
+body, header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    background-color: rgb(116, 70, 109);
+    color:rgb(34, 10, 30);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+h1, h2, h3, h4, h5, a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.banner {
+    border: 2px solid rgb(70, 27, 62);
+    border-radius: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.search {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.myButton {
+	box-shadow: 2px 4px 10px -1px #f283cb;
+	background-color:#fa5ff0;
+	border-radius:28px;
+	border:1px solid #db7fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#4a264a;
+	font-family:Arial;
+	font-size:15px;
+	padding:10px 31px;
+	text-decoration:none;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.artists, .albums {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.buttontrack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-bottom: 20px;
+}
+
+.albums {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-bottom: 20px;
 }

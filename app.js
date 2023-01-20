@@ -61,4 +61,4 @@ app.get("/albums/:artistId/tracks/:albumId", (req, res, next) => {
     });
 });
 
-app.listen(3000, () => console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊'));
+app.listen(3001, () => console.log('My Spotify project running on port 3001 🎧 🥁 🎸 🔊'));
